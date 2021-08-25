@@ -1,0 +1,31 @@
+{
+    "name": "meduza-static-site-generator/meduza",
+    "description": "Gerador de sites est\u0000ticos com PHP.",
+    "type": "project",
+    "require": {
+        "twig/twig": "3.x-dev",
+        "ext-yaml": "^2.2",
+        "php": ">=8.0.3",
+        "league/commonmark": "2.1.x-dev",
+        "meduza-static-site-generator/meduza-theme-alembic": "dev-main"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Everton da Rosa",
+            "email": "everton3x@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Meduza\\": ["src"]
+        }
+    },
+    "bin": [
+        "./bin/build.bat",
+        "./bin/build.sh",
+        "./bin/serve.bat",
+        "./bin/serve.sh"
+    ]
+}

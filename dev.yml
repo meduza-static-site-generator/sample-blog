@@ -1,0 +1,40 @@
+## Configurações de ambiente em desenvolvimento. Também serve como configuração base.
+---
+# Configurações globais, válidas para todo o site
+site:
+    # URL base para o site. Sempre colocar / ao final
+    baseUrl: "http://localhost:8000/"
+    title: "Site de exemplo - DEV"
+    name: "Exemplo"
+    description: "Site de exemplo do Meduza Static Site Generator"
+    keywords: "meduza, static site, php"
+    lang: "pt_BR"
+    locale: "pt_BR"
+    encoding: "UTF-8"
+    author:
+        name: "Everton da Rosa"
+        email: "everton3x@gmail.com"
+        homepage: "https://everton3x.github.io/"
+    copyright: "2021 Everton da Rosa"
+
+# Importa as configurações do tema escolhido
+import:
+    - "./config/theme/alembic.yml"
+    - "./config/plugin/catloger.yml"
+    - "./config/plugin/time-read.yml"
+    - "./config/plugin/resumizer.yml"
+
+defaults:
+    # A diretiva defaults tem como chave um padrão de caminho para se aplicar os valores padrões.
+    # Contudo, havendo várias diretivas com padrões diferentes, não há garantias da ordem de aplicação.
+    # Assim, é necessário ter cuidado com a sobreescrita de diretivas.
+    # A avaliação é feita por preg_match()
+    'content[\/,\\]posts[\/,\\]':
+        layout: "post"
+    'content[\/,\\]pages[\/,\\]':
+        layout: "page"
+
+build:
+    input: "./content"
+    output: "./docs"
+    static: "./static"

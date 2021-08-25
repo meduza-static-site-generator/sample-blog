@@ -1,0 +1,7 @@
+## Configuração do plugin time-read
+
+plugins:
+  Resumizer:
+    source: "./vendor/meduza-static-site-generator/meduza-plugin-resumizer/Resumizer.php"
+    maxWords: 30
+    

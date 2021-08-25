@@ -1,0 +1,14 @@
+## Configurações de ambiente de produção.
+## Subscreve algumas configurações de dev.yml
+---
+# Importa as configurações de dev.yml
+import:
+    - "./dev.yml"
+
+# Configurações globais, válidas para todo o site
+# Isto irá sobreescrever tudo o que estiver sendo importado até aqui.
+site:
+    # URL base para o site. Sempre colocar / ao final
+    baseUrl: "https://my-site-url.com/"
+    title: "Site de exemplo"
+    

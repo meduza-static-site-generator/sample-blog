@@ -1,0 +1,14 @@
+## Configuração do plugin time-read
+
+plugins:
+  Catloger:
+    source: "./vendor/meduza-static-site-generator/meduza-plugin-catloger/Catloger.php"
+    catalog:
+      layout: layout
+      tag: tag
+      tags: tag
+      category: category
+      categories: category
+      categoria: category
+      categorias: category
+    

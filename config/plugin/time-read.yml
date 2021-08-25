@@ -1,0 +1,6 @@
+## Configuração do plugin time-read
+
+plugins:
+  TimeRead:
+    source: "./vendor/meduza-static-site-generator/meduza-plugin-time-read/TimeRead.php"
+    wordsPerMinute: 200

@@ -1,0 +1,19 @@
+## Configurações do tema Alembic
+---
+theme:
+  # Caminho para o diretório do tema. Sem / no final.
+  layouts: "./vendor/meduza-static-site-generator/meduza-theme-alembic/layouts"
+  static: "./vendor/meduza-static-site-generator/meduza-theme-alembic/static"
+  content: "./vendor/meduza-static-site-generator/meduza-theme-alembic/content"
+  logo: "assets/logo.svg"
+  image: "assets/image.jpg"
+  mainMenu:
+    - 
+      label: "Home"
+      url: "index.html"
+    - 
+      label: "About"
+      url: "pages/about.html"
+    - 
+      label: "Posts"
+      url: "posts.html"
