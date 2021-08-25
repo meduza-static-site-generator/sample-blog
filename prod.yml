@@ -9,6 +9,6 @@ import:
 # Isto irá sobreescrever tudo o que estiver sendo importado até aqui.
 site:
     # URL base para o site. Sempre colocar / ao final
-    baseUrl: "https://my-site-url.com/"
+    baseUrl: "https://meduza-static-site-generator.github.io/sample-blog/"
     title: "Site de exemplo"
     
